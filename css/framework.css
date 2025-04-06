@@ -1,0 +1,78 @@
+/* start boxing */
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: start;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-fixed {
+  position: fixed;
+}
+/* end boxing */
+
+/* start border padding margin */
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+.m-6 {
+  margin: 6px;
+}
+/* end border padding margin */
+
+/* start background color */
+.bg-fff {
+  background-color: #fff;
+}
+
+.bg-white {
+  background-color: white;
+}
+/* start background color */
+
+/* start radius */
+.rad-6 {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* end radius */
+
+/* start text */
+.txt-c {
+  text-align: center;
+}
+
+.fs-16 {
+  font-size: 18px;
+}
+
+/* end text */
