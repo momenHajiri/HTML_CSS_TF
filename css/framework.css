@@ -5,6 +5,9 @@
 .items-center {
   align-items: center;
 }
+.space-between {
+  justify-content: space-between;
+}
 
 .justify-center {
   justify-content: center;
@@ -24,11 +27,21 @@
 .p-fixed {
   position: fixed;
 }
+
+.w-full {
+  width: 100%;
+}
 /* end boxing */
 
 /* start border padding margin */
+.p-6 {
+  padding: 6px;
+}
 .p-10 {
   padding: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -54,6 +67,10 @@
 .bg-white {
   background-color: white;
 }
+
+.bg-teal {
+  background-color: aqua;
+}
 /* start background color */
 
 /* start radius */
@@ -71,7 +88,7 @@
   text-align: center;
 }
 
-.fs-16 {
+.fs-18 {
   font-size: 18px;
 }
 

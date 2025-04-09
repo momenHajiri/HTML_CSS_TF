@@ -124,3 +124,61 @@ li {
     max-width: 1320px;
   }
 }
+
+/* start head */
+.head .search input {
+  color: #c7c7c7;
+  border: 1px solid #c7c7c7;
+  padding-left: 35px;
+  width: 160px;
+  font-size: smaller;
+  transition: width, 0.5s;
+  -webkit-transition: width, 0.5s;
+  -moz-transition: width, 0.5s;
+  -ms-transition: width, 0.5s;
+  -o-transition: width, 0.5s;
+}
+.head .search::before {
+  content: "\f002"; /* رمز Font Awesome لأيقونة البحث */
+  font-family: "Font Awesome 5 Free"; /* استخدام خط Font Awesome */
+  font-weight: 900;
+  color: #b9b9b9;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.head .search input:focus {
+  width: 180px;
+  outline: none;
+}
+
+.head .search input:focus::placeholder {
+  visibility: hidden;
+}
+
+.head img {
+  height: 30px;
+  width: 30px;
+}
+.head .icons .notification {
+  position: relative;
+  margin-right: 16px;
+}
+.head .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+}
+/* end head */
