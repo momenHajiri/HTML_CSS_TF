@@ -238,4 +238,61 @@ li {
 
 /* end wrapper */
 
+/* start welcome item */
+.welcome h2 {
+  margin-bottom: 5px;
+}
+.welcome span {
+  color: var(--grey-color);
+}
+.welcome .intro {
+  height: 140px;
+}
+.welcome img {
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .welcome .intro img:first-of-type {
+    display: none;
+  }
+  .welcome .intro {
+    justify-content: center;
+  }
+}
+
+.welcome .avatar {
+  height: 64px;
+  width: 64px;
+  margin-top: -32px;
+  padding: 2px;
+  border: 2px solid white;
+}
+
+.welcome .body div {
+  width: 150px;
+  margin-top: 20px;
+}
+.welcome .btn-shape {
+  margin: 10px auto;
+}
+
+/* end welcome item */
+
 /* end content */
+
+/* start component */
+.btn-shape {
+  color: white;
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 20px;
+}
+
+/* end component */

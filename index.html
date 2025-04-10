@@ -32,6 +32,7 @@
 
   <body class="bg-fff">
     <div class="page flex">
+      <!-- start sidebar -->
       <div class="sidebar bg-white p-20 p-relative">
         <h3 class="txt-c p-relative">
           El <br />
@@ -110,7 +111,10 @@
           </li>
         </ul>
       </div>
+      <!-- end sidebar -->
+      <!-- start content -->
       <div class="content w-full">
+        <!-- head -->
         <div class="head bg-white p-10 flex items-centre space-between">
           <div class="search m-6 p-relative">
             <input
@@ -126,13 +130,33 @@
             <img src="imgs/avatar.png" alt="avatar" />
           </div>
         </div>
+        <!-- heading -->
         <div class="heading mx-20 p-relative">
           <h1>Dashboard</h1>
         </div>
+        <!-- main wrapper grid -->
         <div class="wrapper grid-container gap-20 m-20">
-          <div class="welcome bg-white rad-6">welcome</div>
-          <div class="welcome bg-white rad-6">welcome</div>
-          <div class="welcome bg-white rad-6">welcome</div>
+          <!-- start welcome item -->
+          <div class="welcome bg-white rad-6 txt-c">
+            <div class="intro bg-eee flex space-between p-20">
+              <div class="text">
+                <h2>welcome</h2>
+                <span>ElMomen</span>
+              </div>
+              <img src="imgs/welcome.png" alt="welcome image" />
+            </div>
+            <img class="avatar rounded-full" src="imgs/avatar.png" alt="" />
+            <div
+              class="body flex wrap space-evenly items-center border-t-1 border-b-1 p-20 m-20"
+            >
+              <div>Momen alhajiri<span class="block">Developer</span></div>
+              <div>80<span class="block">Projects</span></div>
+              <div>8500$<span class="block">Earned</span></div>
+            </div>
+            <a href="profile.html" class="visit d-block fs-14 btn-shape"
+              >Profile</a
+            >
+          </div>
         </div>
       </div>
     </div>
