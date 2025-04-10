@@ -1,7 +1,10 @@
 :root {
-  --main-color: #19c8ef;
-  --transparent-color: rgb(15 116 143 / 70%);
-  --hint-color: #777;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 
 *,
@@ -91,6 +94,7 @@ li {
 
 @media (max-width: 767px) {
   /* Mobile */
+  /* start sidebar-mobile */
   .sidebar {
     width: fit-content;
     padding: 5px;
@@ -105,6 +109,7 @@ li {
   .sidebar ul span {
     display: none;
   }
+  /* end sidebar-mobile */
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Tablets */
@@ -182,3 +187,55 @@ li {
   top: -5px;
 }
 /* end head */
+
+/* start scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+/* end scrollbar */
+
+/* start content */
+
+/* start heading */
+.heading {
+  margin-bottom: 40px;
+}
+.heading h1::before,
+.heading h1::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  height: 3px;
+}
+.heading h1::before {
+  width: 120px;
+  background-color: white;
+}
+.heading h1::after {
+  width: 50px;
+  background-color: black;
+}
+/* end heading */
+/* start wrapper */
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+
+/* end wrapper */
+
+/* end content */
