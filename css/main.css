@@ -276,8 +276,18 @@ li {
 .welcome .btn-shape {
   margin: 10px auto;
 }
-
 /* end welcome item */
+
+/* start draft */
+
+.draft .save {
+  margin: 20px 10px 0px auto;
+}
+
+.draft .your {
+  height: 100px;
+}
+/* end draft */
 
 /* end content */
 
@@ -293,6 +303,9 @@ li {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   margin: 20px;
+}
+.btn-shape:hover {
+  background-color: var(--blue-alt-color);
 }
 
 /* end component */

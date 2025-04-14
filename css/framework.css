@@ -75,11 +75,22 @@
   padding-top: 20px;
 }
 
+.b-none {
+  border: none;
+}
 .border-t-1 {
   border-top: 1px solid #eee;
 }
 .border-b-1 {
   border-bottom: 1px solid #eee;
+}
+
+.rounded-md {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .m-20 {
@@ -90,6 +101,9 @@
 }
 .mx-20 {
   margin: 0px 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .rounded-full {
