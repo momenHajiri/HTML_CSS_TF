@@ -289,6 +289,89 @@ li {
 }
 /* end draft */
 
+/* start yearly target */
+.targets .icon {
+  width: 80px;
+  height: 80px;
+}
+.targets .money .icon {
+  color: var(--blue-color);
+  background-color: rgb(0 117 255 / 20%);
+}
+.targets .details {
+  flex: 1;
+}
+.targets .details .hint {
+  color: var(--grey-color);
+}
+.targets .details .progress {
+  margin: 10px;
+  height: 4px;
+}
+.targets .money .details .progress {
+  background-color: rgb(0 117 255 / 20%);
+}
+.targets .project .details .progress {
+  background-color: rgb(245 158 11 / 20%);
+}
+.targets .team .details .progress {
+  background-color: rgb(34 197 94 / 20%);
+}
+.targets .details .progress > div {
+  height: 4px;
+}
+.targets .money .details .progress > div {
+  background-color: var(--blue-color);
+}
+.targets .project .details .progress > div {
+  background-color: var(--orange-color);
+}
+.targets .team .details .progress > div {
+  background-color: var(--green-color);
+}
+.targets .details .progress > div .pointer {
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+  top: -40px;
+  right: -15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.targets .money .details .progress > div .pointer {
+  background-color: var(--blue-color);
+}
+.targets .project .details .progress > div .pointer {
+  background-color: var(--orange-color);
+}
+.targets .team .details .progress > div .pointer {
+  background-color: var(--green-color);
+}
+.targets .details .progress > div .pointer::after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.targets .money .details .progress > div .pointer::after {
+  border-top-color: var(--blue-color);
+}
+.targets .project .details .progress > div .pointer::after {
+  border-top-color: var(--orange-color);
+}
+.targets .team .details .progress > div .pointer::after {
+  border-top-color: var(--green-color);
+}
+/* end yearly target */
+
 /* end content */
 
 /* start component */
