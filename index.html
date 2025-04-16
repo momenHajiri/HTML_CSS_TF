@@ -17,9 +17,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <!-- css rel -->
-    <link rel="stylesheet" href="css/framework.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -130,10 +130,11 @@
             <img src="imgs/avatar.png" alt="avatar" />
           </div>
         </div>
-        <!-- heading -->
+        <!-- start heading -->
         <div class="heading mx-20 p-relative">
           <h1>Dashboard</h1>
         </div>
+        <!-- end heading -->
         <!-- main wrapper grid -->
         <div class="wrapper grid-container gap-20 m-20">
           <!-- start welcome item -->
@@ -160,7 +161,9 @@
           <!-- Quick Draft -->
           <div class="draft bg-white p-20 rad-6">
             <h2>Quick draft</h2>
-            <span class="mb-10 d-block">Write a Drafrt for your ideas</span>
+            <span class="mb-10 d-block mb-20 d-block txt-grey"
+              >Write a Drafrt for your ideas</span
+            >
             <form action="">
               <input
                 class="w-full bg-eee b-none p-10 rounded-md mb-10"
@@ -185,8 +188,10 @@
           </div>
           <!-- yearly target -->
           <div class="targets bg-white p-20 rad-6">
-            <h2>Yearly Target</h2>
-            <span class="mb-10 d-block">Write a Drafrt for your ideas</span>
+            <h2>Yearly Targets</h2>
+            <span class="mb-10 d-block txt-grey mb-20 d-block"
+              >Targets Of The Year</span
+            >
             <div class="target-row money flex m-10">
               <div class="icon center-flex">
                 <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
@@ -230,6 +235,38 @@
               </div>
             </div>
           </div>
+          <!-- start taerget statistics -->
+          <div class="Tickets-statistics bg-white p-20 rad-6">
+            <h2>Tickets statistics</h2>
+            <span class="mb-10 d-block txt-grey mb-20 d-block"
+              >Everything About Support Tickets</span
+            >
+            <div class="flex wrap gap-20 txt-c">
+              <div class="box p-20 rounded-md border-1">
+                <i
+                  class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"
+                ></i>
+                <h2>2500</h2>
+                <span class="d-block txt-grey">total</span>
+              </div>
+              <div class="box p-20 rounded-md border-1">
+                <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                <h2>2500</h2>
+                <span class="d-block txt-grey">total</span>
+              </div>
+              <div class="box p-20 rounded-md border-1">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                <h2>1900</h2>
+                <span class="d-block txt-grey">total</span>
+              </div>
+              <div class="box p-20 rounded-md border-1">
+                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                <h2>100</h2>
+                <span class="d-block txt-grey">total</span>
+              </div>
+            </div>
+          </div>
+          <!-- end taerget statistics -->
         </div>
       </div>
     </div>

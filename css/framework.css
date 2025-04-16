@@ -89,6 +89,9 @@
 .border-b-1 {
   border-bottom: 1px solid #eee;
 }
+.border-1 {
+  border: 1px solid #eee;
+}
 
 .rounded-md {
   border-radius: 6px;
@@ -112,6 +115,9 @@
 }
 .mb-10 {
   margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .rounded-full {
@@ -152,12 +158,18 @@
 .c-green {
   color: var(--green-color);
 }
-
+.c-blue {
+  color: var(--blue-color);
+}
 .c-orange {
   color: var(--orange-color);
 }
 .bg-orange-200 {
   background-color: rgb(245 158 11 / 20%);
+}
+
+.c-red {
+  color: red;
 }
 /* start background color */
 
@@ -185,6 +197,10 @@
 
 .txt-bold {
   font-weight: bold;
+}
+
+.txt-grey {
+  color: var(--grey-color);
 }
 
 @media (max-width: 767px) {

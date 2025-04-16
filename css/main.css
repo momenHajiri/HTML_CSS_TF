@@ -370,6 +370,19 @@ li {
 .targets .team .details .progress > div .pointer::after {
   border-top-color: var(--green-color);
 }
+
+/* start tickets statistic */
+.Tickets-statistics .box {
+  flex-basis: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+  .Tickets-statistics .box {
+    flex-basis: 100%;
+  }
+}
+
+/* end tickets statistic */
+
 /* end yearly target */
 
 /* end content */
