@@ -370,6 +370,7 @@ li {
 .targets .team .details .progress > div .pointer::after {
   border-top-color: var(--green-color);
 }
+/* end yearly target */
 
 /* start tickets statistic */
 .Tickets-statistics .box {
@@ -380,10 +381,31 @@ li {
     flex-basis: 100%;
   }
 }
-
 /* end tickets statistic */
 
-/* end yearly target */
+/* start Latest News */
+.latest-news .news-row img {
+  width: 100px;
+}
+.latest-news .news-row h3 {
+  margin: 0px;
+}
+
+@media (max-width: 767px) {
+  .latest-news .news-row {
+    display: block;
+    text-align: center;
+  }
+  .latest-news .news-row div {
+    margin-top: 20px;
+  }
+  .latest-news .label {
+    width: fit-content;
+    margin: 0px auto;
+  }
+}
+
+/* end Latest News */
 
 /* end content */
 
