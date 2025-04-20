@@ -421,6 +421,13 @@ li {
   text-decoration: line-through;
 }
 /* end Latest Tasks */
+/* start lateset uploads */
+.latest-uploads img {
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+/* end lateset uploads */
 
 /* end content */
 
