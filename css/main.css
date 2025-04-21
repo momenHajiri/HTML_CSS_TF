@@ -493,6 +493,75 @@ li {
 }
 /* end last project progress */
 
+/* start Reminder */
+.reminder ul {
+  padding-left: 60px;
+}
+.reminder ul li::after {
+  content: "";
+  position: absolute;
+  background-color: var(--blue-color);
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: -60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.reminder ul li:nth-child(1)::after {
+  background-color: var(--blue-color);
+}
+.reminder ul li:nth-child(2)::after {
+  background-color: var(--green-color);
+}
+.reminder ul li:nth-child(3)::after {
+  background-color: var(--orange-color);
+}
+.reminder ul li:nth-child(4)::after {
+  background-color: var(--red-color);
+}
+.reminder ul li:nth-child(1)::before,
+.reminder ul li:nth-child(2)::before,
+.reminder ul li:nth-child(3)::before,
+.reminder ul li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 3px;
+  height: 100%;
+  left: -30px;
+  top: 50%;
+}
+.reminder ul li:nth-child(1)::before {
+  background-color: var(--blue-color);
+}
+.reminder ul li:nth-child(2)::before {
+  background-color: var(--green-color);
+}
+.reminder ul li:nth-child(3)::before {
+  background-color: var(--orange-color);
+}
+.reminder ul li:nth-child(4)::before {
+  top: 0;
+  background-color: var(--red-color);
+  animation: rotato 2s ease-in-out 0s infinite;
+  -webkit-animation: rotato 2s ease-in-out 0s infinite;
+}
+
+/* end Reminder */
+
 /* end content */
 
 /* start component */
@@ -522,6 +591,23 @@ li {
   }
   50% {
     background-color: var(--blue-color);
+  }
+}
+@keyframes rotato {
+  0%,
+  100% {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    -ms-transform: rotateZ(10deg);
+    -o-transform: rotateZ(10deg);
   }
 }
 /* end animation */

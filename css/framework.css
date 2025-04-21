@@ -128,8 +128,8 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.ml-16 {
-  margin-left: 16px;
+.mt-6 {
+  margin-top: 6px;
 }
 .mb-6 {
   margin-bottom: 6px;
@@ -140,7 +140,9 @@
 .mb-20 {
   margin-bottom: 20px;
 }
-
+.ml-16 {
+  margin-left: 16px;
+}
 .rounded-full {
   border-radius: 50%;
   -webkit-border-radius: 50%;
