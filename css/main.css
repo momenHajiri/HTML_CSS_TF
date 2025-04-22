@@ -571,6 +571,64 @@ li {
   margin-left: 10px;
 }
 /* end Latest Post */
+/* start Social Media */
+.social-media .twitter-row {
+  background-color: #0077ff20;
+}
+.social-media .facebook-row {
+  background-color: rgb(24 119 242 / 20%);
+}
+.social-media .youtube-row {
+  background-color: rgb(255 0 0 / 20%);
+}
+.social-media .linkedin-row {
+  background-color: rgb(0 119 181 / 20%);
+}
+.social-media .social-row .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  margin: -10px 20px -10px -10px;
+  padding: 30px;
+}
+.social-media .social-row i {
+  color: white;
+}
+.social-media .social-row.twitter-row .icon,
+.social-media .social-row.twitter-row .button {
+  background-color: var(--blue-color);
+}
+.social-media .social-row.twitter-row .sub {
+  color: var(--blue-color);
+}
+.social-media .social-row.facebook-row .sub {
+  color: rgb(24 119 242);
+}
+.social-media .social-row.facebook-row .icon,
+.social-media .social-row.facebook-row .button {
+  background-color: rgb(24 119 242);
+}
+.social-media .social-row.youtube-row .sub {
+  color: rgb(255 0 0);
+}
+.social-media .social-row.youtube-row .icon,
+.social-media .social-row.youtube-row .button {
+  background-color: rgb(255 0 0);
+}
+.social-media .social-row.linkedin-row .sub {
+  color: rgb(0 119 181);
+}
+.social-media .social-row.linkedin-row .icon,
+.social-media .social-row.linkedin-row .button {
+  background-color: rgb(0 119 181);
+}
+.social-media .social-row .button {
+  color: white;
+}
+
+/* end Social Media */
 
 /* end content */
 
