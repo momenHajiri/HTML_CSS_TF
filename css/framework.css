@@ -100,6 +100,9 @@
 .border-b-1 {
   border-bottom: 1px solid #eee;
 }
+.border-b-1-b {
+  border-bottom: 1px solid var(--grey-color);
+}
 .border-1 {
   border: 1px solid #eee;
 }
