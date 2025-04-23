@@ -592,7 +592,13 @@ li {
   width: 32px;
   margin: -10px 20px -10px -10px;
   padding: 30px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
+
 .social-media .social-row i {
   color: white;
 }
@@ -627,9 +633,75 @@ li {
 .social-media .social-row .button {
   color: white;
 }
+@media (max-width: 450px) {
+  .social-media .social-row {
+    margin: 0px 0px 6px 0px;
+  }
+  .social-media .social-row .sub,
+  .social-media .social-row .button {
+    font-size: small;
+  }
+  .social-media .social-row .icon {
+    margin-right: 6px;
+  }
+}
 
 /* end Social Media */
 
+/* start table */
+.projects {
+  width: calc(100vw - 250px);
+}
+@media (max-width: 767px) {
+  .projects {
+    width: calc(100vw - 120px);
+  }
+}
+.projects .table-over {
+  overflow-x: auto;
+}
+
+.projects .projects-table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.projects .projects-table thead {
+  background-color: #eee;
+}
+.projects .projects-table thead tr {
+  text-align: left !important;
+}
+.projects .table-over {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.projects .projects-table img {
+  height: 25px;
+  width: 25px;
+  display: inline;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  outline: 2px solid white;
+  margin-top: 10px;
+}
+
+.projects .projects-table img:not(:nth-child(1)) {
+  margin-left: -10px;
+}
+.projects .projects-table tbody td {
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+.projects .projects-table tbody td:nth-child(1) {
+  border-left: 1px solid #eee;
+}
+
+/* end project table */
 /* end content */
 
 /* start component */
