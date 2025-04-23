@@ -704,6 +704,10 @@ li {
 /* end project table */
 /* end content */
 
+/* ----------------- start setting html ------------------------*/
+
+/* ----------------- end setting html --------------------------*/
+
 /* start component */
 .btn-shape {
   color: white;
@@ -719,6 +723,52 @@ li {
 }
 .btn-shape:hover {
   background-color: var(--blue-alt-color);
+}
+
+.toggle-checkbox {
+  appearance: none;
+}
+.toggle-switch {
+  position: relative;
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.toggle-switch::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00d";
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  color: var(--blue-color);
+  content: "\f00c";
+  transform: translateX(45px) rotate(360deg);
+  -webkit-transform: translateX(45px) rotate(360deg);
+  -moz-transform: translateX(45px) rotate(360deg);
+  -ms-transform: translateX(45px) rotate(360deg);
+  -o-transform: translateX(45px) rotate(360deg);
 }
 
 /* end component */
