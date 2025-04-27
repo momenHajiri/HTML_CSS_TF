@@ -722,15 +722,48 @@ li {
 }
 .site-control .toggle-switch {
   top: -8px;
-  left: -16px;
+  left: -8px;
 }
 @media (max-width: 767px) {
   .site-control span.fs-14 {
     margin: 16px 0px 16px 6px;
-    max-lines: 2;
   }
 }
 /* end Site Controll */
+/* start General info  */
+.general-info input {
+  border: 2px solid #eee;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.general-info input:focus {
+  border-color: #007bff63;
+  box-shadow: inset 0 0 2px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+.general-info input:disabled {
+  background-color: #f0f4f8;
+
+  color: #bbb;
+  cursor: no-drop;
+}
+@media (max-width: 767px) {
+  .general-info label {
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+  .general-info .flex {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .general-info .btn-shape {
+    margin: 6px auto 6px auto;
+  }
+}
+/* end General info  */
 /* ----------------- end setting html --------------------------*/
 
 /* start component */
@@ -748,6 +781,7 @@ li {
 }
 .btn-shape:hover {
   background-color: var(--blue-alt-color);
+  cursor: pointer;
 }
 
 .toggle-checkbox {
