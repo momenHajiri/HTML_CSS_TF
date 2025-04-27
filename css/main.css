@@ -764,6 +764,26 @@ li {
   }
 }
 /* end General info  */
+/* start Security info */
+.security-info .flex {
+  padding: 12px;
+}
+.security-info .btn-shape {
+  margin: 0px;
+  font-size: 14px;
+}
+.security-info .flex:last-child .btn-shape {
+  background-color: #eee;
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .security-info span {
+    font-size: 14px;
+    margin-top: -10px;
+  }
+}
+/* end Security info */
 /* ----------------- end setting html --------------------------*/
 
 /* start component */
