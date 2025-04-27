@@ -228,8 +228,9 @@ li {
 /* end heading */
 /* start wrapper */
 .wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
+
 @media (max-width: 767px) {
   .wrapper {
     grid-template-columns: minmax(200px, 1fr);
@@ -705,7 +706,31 @@ li {
 /* end content */
 
 /* ----------------- start setting html ------------------------*/
-
+/* start Site Controll */
+.site-control textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 16px;
+  resize: none;
+  min-height: 120px;
+}
+.site-control textarea:focus {
+  border-color: #007bff63;
+  box-shadow: inset 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+.site-control .toggle-switch {
+  top: -8px;
+  left: -16px;
+}
+@media (max-width: 767px) {
+  .site-control span.fs-14 {
+    margin: 16px 0px 16px 6px;
+    max-lines: 2;
+  }
+}
+/* end Site Controll */
 /* ----------------- end setting html --------------------------*/
 
 /* start component */
@@ -730,7 +755,7 @@ li {
 }
 .toggle-switch {
   position: relative;
-  background-color: #ccc;
+  background: linear-gradient(145deg, #dcdcdc, #f0f0f0);
   width: 78px;
   height: 32px;
   border-radius: 16px;
@@ -740,8 +765,10 @@ li {
   -o-border-radius: 16px;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .toggle-switch::before {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-family: "Font Awesome 6 Free";
   content: "\f00d";
   font-weight: 900;
@@ -756,10 +783,11 @@ li {
   justify-content: center;
   align-items: center;
   color: #aaa;
-  transition: 0.3s;
+  transition: transform 0.5s ease-in-out, color 0.3s;
 }
 .toggle-checkbox:checked + .toggle-switch {
-  background-color: var(--blue-color);
+  background: linear-gradient(to left, #0075ff, #80bfff);
+  animation: pulse 0.3s;
 }
 .toggle-checkbox:checked + .toggle-switch::before {
   color: var(--blue-color);
@@ -769,6 +797,11 @@ li {
   -moz-transform: translateX(45px) rotate(360deg);
   -ms-transform: translateX(45px) rotate(360deg);
   -o-transform: translateX(45px) rotate(360deg);
+}
+@media (max-width: 767px) {
+  .toggle-switch {
+    scale: 0.8;
+  }
 }
 
 /* end component */
@@ -798,6 +831,18 @@ li {
     -moz-transform: rotateZ(10deg);
     -ms-transform: rotateZ(10deg);
     -o-transform: rotateZ(10deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* end animation */

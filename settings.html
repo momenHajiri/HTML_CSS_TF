@@ -142,12 +142,31 @@
           <h1>Settings</h1>
         </div>
         <!-- end heading -->
-        <!-- start toggle -->
-        <label>
-          <input class="toggle-checkbox" type="checkbox" />
-          <div class="toggle-switch"></div>
-        </label>
-        <!-- end toggle -->
+        <!-- start wrapper -->
+        <div class="wrapper grid-container gap-20 m-20">
+          <!-- start Site Control -->
+          <div class="site-control bg-white p-20 rad-6">
+            <h2>Site Control</h2>
+            <span class="d-block txt-grey"
+              >Control The Website If There Is Maintenance
+            </span>
+            <span class="d-block txt-bold mt-20">Website Control </span>
+            <div class="flex items-center space-between">
+              <span class="d-block txt-grey m-20 flex-1 fs-14">
+                Open/Close Website And Type The Reason
+              </span>
+              <!-- start toggle -->
+              <label>
+                <input class="toggle-checkbox" type="checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+              <!-- end toggle -->
+            </div>
+            <textarea name="" id="" placeholder="Write a Reason"></textarea>
+          </div>
+          <!-- end Site Control -->
+        </div>
+        <!-- end wrapper -->
       </div>
     </div>
   </body>
