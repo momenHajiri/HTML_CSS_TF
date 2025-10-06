@@ -904,20 +904,23 @@ li {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.backup-manager input[name="iteration"]:checked::before {
+
+.backup-manager input[name="iteration"]::before {
   content: "";
   position: absolute;
   background-color: var(--blue-color);
   height: 80%;
   width: 80%;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   top: 1.6px;
   left: 1.8px;
+  transform: scale(0);
+  transition: 0.3s ease;
 }
+.backup-manager input[name="iteration"]:checked::before {
+  transform: scale(1);
+}
+
 .backup-manager hr {
   border-color: #eee;
   width: 95%;
